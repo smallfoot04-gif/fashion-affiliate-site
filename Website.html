@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Style | TV & Movie Outfit Replicas</title>
+  <meta name="description" content="Shop exact outfits and budget-friendly match-for-less options worn by characters in trending TV shows and movies.">
+  
+  <!-- Structured Schema Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Screen Style",
+    "url": "http://starfit4u.linkpc.net",
+    "description": "Find exact and budget TV show outfits."
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #e11d48;
+      --bg-gray: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text-main: #334155;
+      --text-muted: #64748b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-gray);
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    /* Top Announcement Bar */
+    .announcement-bar {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* Main Navigation Header */
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1.5rem 1rem;
+      sticky: top;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* Main Content Layout */
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+
+    /* Outfit Card Component */
+    .outfit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .outfit-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .show-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      margin: 0.25rem 0 0.5rem 0;
+      color: var(--primary);
+    }
+
+    .card-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    /* Product Match Box */
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .product-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem;
+      background: var(--bg-gray);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .product-info h4 {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .product-info p {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 0.2rem;
+    }
+
+    .badge-exact { background: #dbeafe; color: #1e40af; }
+    .badge-dupe { background: #dcfce7; color: #166534; }
+
+    .affiliate-btn {
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 6px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .affiliate-btn:hover {
+      background: var(--accent);
+    }
+
+    /* Footer & Legal Disclosure */
+    footer {
+      background: var(--primary);
+      color: #94a3b8;
+      padding: 2.5rem 1rem;
+      font-size: 0.85rem;
+      margin-top: 4rem;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .disclosure {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border: 1px solid #334155;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="announcement-bar">
+    🔥 New TV Outfit Drops Added Weekly — Exact Matches & Budget Replicas
+  </div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo">SCREEN STYLE</a>
+      <ul class="nav-links">
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#shows">Browse Shows</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title" id="trending">Trending Screen Outfits</h2>
+
+    <div class="outfit-grid">
+
+      <!-- OUTFIT CARD 1 -->
+      <article class="outfit-card">
+        <div class="card-body">
+          <span class="show-tag">Euphoria • Season 3</span>
+          <h3 class="card-title">Rue's Oversized Vintage Leather Jacket</h3>
+          <p class="card-meta">Worn by Zendaya (Rue Bennett) in Episode 1</p>
+          <p>Recreate Rue's iconic street look using the exact designer piece or the under-$70 budget alternative below.</p>
+
+          <div class="product-list">
+            <!-- Exact Match -->
+            <div class="product-item">
+              <div class="product-info">
+                <span class="badge badge-exact">Exact Match</span>
+                <h4>Vintage Distressed Leather</h4>
+                <p>Designer Brand</p>
+              </div>
+              <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored" class="affiliate-btn">Shop $350</a>
+            </div>
+
+            <!-- Budget Match -->
+            <div class="product-item">
+              <div class="product-info">
+                <span class="badge badge-dupe">Budget Dupe</span>
+                <h4>Faux Leather Biker Jacket</h4>
+                <p>ASOS / Amazon</p>
+              </div>
+              <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored" class="affiliate-btn">Shop $65</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- OUTFIT CARD 2 -->
+      <article class="outfit-card">
+        <div class="card-body">
+          <span class="show-tag">Succession • Season 4</span>
+          <h3 class="card-title">Shiv Roy's Executive Tailored Blazer</h3>
+          <p class="card-meta">Worn by Sarah Snook in Episode 3</p>
+          <p>A classic luxury power-suit outfit for boardroom style, featuring high-end wool and budget rayon alternatives.</p>
+
+          <div class="product-list">
+            <!-- Exact Match -->
+            <div class="product-item">
+              <div class="product-info">
+                <span class="badge badge-exact">Exact Match</span>
+                <h4>Single-Breasted Wool Blazer</h4>
+                <p>Gabriela Hearst</p>
+              </div>
+              <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored" class="affiliate-btn">Shop $1,200</a>
+            </div>
+
+            <!-- Budget Match -->
+            <div class="product-item">
+              <div class="product-info">
+                <span class="badge badge-dupe">Budget Dupe</span>
+                <h4>Tailored Suit Jacket</h4>
+                <p>H&M / Zara</p>
+              </div>
+              <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored" class="affiliate-btn">Shop $49</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="disclosure">
+        <strong>FTC Disclosure:</strong> As an affiliate, this site earns commissions from qualifying purchases made through shop links at zero extra cost to you.
+      </div>
+      <p>&copy; 2026 Screen Style. All rights reserved. Host: starfit4u.linkpc.net</p>
+    </div>
+  </footer>
+
+</body>
+</html>
